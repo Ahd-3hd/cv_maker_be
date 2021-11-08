@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>These are the data that you entered</h1>
+    <p>
+      These can be processed and populated like this in a styled template with
+      HTML + CSS
+    </p>
+    <ul>
+      {{#each info}}
+      <li>Name: {{this.name}}</li>
+      <li>position: {{this.position}}</li>
+      <li>summary: {{this.summary}}</li>
+      <li>email: {{this.email}}</li>
+      <li>phone: {{this.phone}}</li>
+      <li>linkedin: {{this.linkedin}}</li>
+      <li>website: {{this.website}}</li>
+      <li>jobTitle: {{this.jobTitle}}</li>
+      <li>companyName: {{this.companyName}}</li>
+      <li>educationName: {{this.educationName}}</li>
+      <li>skills: {{this.skills}}</li>
+      <li>languages: {{this.languages}}</li>
+      <br />
+      {{/each}}
+    </ul>
+  </body>
+</html>
